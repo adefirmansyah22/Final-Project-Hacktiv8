@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Latihan - Rizki Cahyana</title>
+
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+      }
+
+      nav {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      nav ul {
+        display: flex;
+      }
+
+      nav ul li {
+        list-style-type: none;
+        padding: 0 0.5em;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+      }
+
+      #logo-wrapper img {
+        width: 300px;
+      }
+
+      #header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f3bc55;
+        position: fixed;
+        width: 100%;
+      }
+
+      .content-wrapper {
+        min-height: 100vh;
+        padding: 6em 1em 1em 1em;
+        /* padding-top: 2em; */
+      }
+
+      #content-1 {
+        background-color: tomato;
+      }
+      #content-2 {
+        background-color: powderblue;
+      }
+      #content-3 {
+        background-color: pink;
+      }
+      #content-4 {
+        background-color: greenyellow;
+      }
+      #content-5 {
+        background-color: blueviolet;
+      }
+      #content-6 {
+        background-color: darkseagreen;
+      }
+
+      .outer-section-wrapper {
+        display: flex;
+      }
+
+      #footer {
+        margin-top: auto;
+        padding: 0.5em;
+        text-align: center;
+        background-color: #f9a200;
+        color: #fff;
+      }
+
+      #tulisanBerjalan {
+        color: #fff;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.27/dist/sweetalert2.min.css"
+    />
+  </head>
+  <body>
+    <section id="header">
+      <div id="logo-wrapper">
+        <img
+          src="https://www.hacktiv8.com/_next/image?url=%2Flogo.png&w=1200&q=75"
+          alt="Logo / Foto"
+        />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#content-1">Menu 1</a></li>
+          <li><a href="#content-2">Menu 2</a></li>
+          <li><a href="#content-3">Menu 3</a></li>
+          <li><a href="#content-4">Menu 4</a></li>
+          <li><a href="#content-5">Menu 5</a></li>
+          <li><a href="#content-6">Menu 6</a></li>
+          <li><a href="#content-7">Menu 7</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <div class="outer-section-wrapper">
+        <section class="content-wrapper" id="content-1">
+          <h1>About</h1>
+    
+          <h3>
+            We provide solution for 
+            <span id="tulisanBerjalan"></span>
+          </h3>
+    
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            incidunt voluptate natus nostrum. Eligendi sunt, illum at aliquam, iure
+            natus ipsum fuga praesentium inventore odio earum quam voluptatem est
+            adipisci.
+          </p>
+        </section>
+        <section class="content-wrapper" id="content-2">
+          <h1>Experience</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            incidunt voluptate natus nostrum. Eligendi sunt, illum at aliquam, iure
+            natus ipsum fuga praesentium inventore odio earum quam voluptatem est
+            adipisci.
+          </p>
+        </section>
+    </div>
+    <div class="outer-section-wrapper">
+        <section class="content-wrapper" id="content-3">
+          <h1>Education</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            incidunt voluptate natus nostrum. Eligendi sunt, illum at aliquam, iure
+            natus ipsum fuga praesentium inventore odio earum quam voluptatem est
+            adipisci.
+          </p>
+        </section>
+        <section class="content-wrapper" id="content-4">
+          <h1>Skills</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            incidunt voluptate natus nostrum. Eligendi sunt, illum at aliquam, iure
+            natus ipsum fuga praesentium inventore odio earum quam voluptatem est
+            adipisci.
+          </p>
+        </section>
+    </div>
+    <div class="outer-section-wrapper">
+        <section class="content-wrapper" id="content-5">
+          <h1>Interest</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            incidunt voluptate natus nostrum. Eligendi sunt, illum at aliquam, iure
+            natus ipsum fuga praesentium inventore odio earum quam voluptatem est
+            adipisci.
+          </p>
+        </section>
+        <section class="content-wrapper" id="content-6">
+          <h1>Award</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            incidunt voluptate natus nostrum. Eligendi sunt, illum at aliquam, iure
+            natus ipsum fuga praesentium inventore odio earum quam voluptatem est
+            adipisci.
+          </p>
+        </section>
+    </div>
+    <div class="outer-section-wrapper">
+        <section class="content-wrapper" id="content-7">
+          <h1>Contact Me</h1>
+    
+          <label for="email">E-Mail: </label>
+          <input type="email" name="email" /> <br />
+          <label for="nama">Nama: </label>
+          <input type="text" name="nama" /> <br />
+          <label for="keterangan">Nama: </label>
+          <textarea
+            name="keterangan"
+            id="keterangan"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <br /><br />
+    
+          <button id="btn-kirim" onclick="openPopUp();">Kirim Pesan</button>
+        </section>
+
+    </div>
+
+    <section id="footer">
+      &copy; Copyright 2023. Rizki Cahyana. All Rights Reserved
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.27/dist/sweetalert2.all.min.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+      const typed = new Typed("#tulisanBerjalan", {
+        strings: ["Web Development", "Game Development", "Animation", "Video Editing", "Mobile App Development"],
+        typeSpeed: 50,
+        backSpeed: 20,
+        loop: true
+      });
+
+      function openPopUp() {
+        Swal.fire({
+          icon: "success",
+          title: "Berhasil Mengirimkan Pesan",
+          text: "Terima kasih sudah menghubungi saya!",
+        });
+      }
+    </script>
+  </body>
+</html>

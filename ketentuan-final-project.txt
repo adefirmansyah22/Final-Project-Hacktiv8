@@ -1,0 +1,29 @@
+Ketentuan Final Project 
+
+1. Membuat Landing Page, terdiri dari:
+    a. About / Tentang
+    b. Experiences / Pengalaman Kerja 
+    c. Education / Riwayat Pendidikan
+    d. Skills / Keterampilan
+    e. Interest / Minat / Hobi
+    f. Award / Penghargaan 
+
+2. Boleh pilih:
+    - Single Page ==> "index.html"
+    - Multiple Page (7 Halaman):
+        - index.html        ==> Landing
+        - about.html
+        - experience.html
+        - education.html
+        - skill.html
+        - interest.html
+        - award.html 
+
+3. Tidak menggunakan template atau css framework
+
+4. Yang dikumpulkan adalah: 
+    - Source code diarsip dalam format (*.zip) atau (*.rar)
+    - Link Github 
+    - Link Deployment (Netlify)
+
+5. Deadline / Batas akhir pengumpulan: Jumat, 1 September 2023 pukul 23:59:59 WIB
